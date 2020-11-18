@@ -39,7 +39,7 @@ steps:
         "services",
         "update-traffic",
         "$PROJECT_ID", # We are naming the cloudrun service the same as our project id
-        "--to-latest",
+        "--to-revisions=LATEST=50",
         "--region",
         "australia-southeast1",
         "--platform",
